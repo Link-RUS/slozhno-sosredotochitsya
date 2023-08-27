@@ -10,15 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-bg-image: url(../images/cover-image-light.png);
-  --main-bg-color: #FFF1F7;
+  --main-bg-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --decoration-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-        /* Дублируем переменные светлой темы */  
-  --main-bg-image: url(../images/cover-image-light.png);
-  --main-bg-color: #FFF1F7;
-        --accent-color: #ff8dcb;  
-    }
+    /* Дублируем переменные светлой темы */
+    --main-bg-image: url(../images/cover-image-light.png);
+    --main-bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --decoration-color: transparent;
+  }
 }
