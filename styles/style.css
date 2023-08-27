@@ -1,5 +1,172 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #F1B2CE;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  padding: 20px;
+  height: 100vh;
+}
+
+.header__theme-menu {
+  place-self: start center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+
+  padding: 1.5px 13px;
+
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+}
+
+.title {
+  color: #db00ff;
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.75rem + 14.0625vw, 9.75rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  place-self: center start;
+}
+
+.description {
+  display: flex;
+  width: clamp(355px, 50%, 491px);
+  justify-self: end;
+  margin: auto 0;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: #000028;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-block: 60px;
+  margin-inline: 20px;
+  gap: 80px;
+}
+
+.main__section {
+  display: grid;
+  gap: 20px;
+
+}
+
+.main__section:first-child,
+.main__section:nth-child(3) {
+  grid-template-columns: 1fr 2fr;
+}
+
+.main__section:nth-child(2) {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.main__section:nth-child(2) .main__section-title {
+  grid-column: span 3;
+  width: calc(100% / 3);
+  
+}
+
+.main__section:last-child {
+  
+}
+
+.main__section-title {
+  color: var(--accent-color);
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+}
+
+.text {
+  color: #F1B2CE;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23.4px; /* 130% */
+}
+
+
+
+@media (width <= 768px) {
+  .header__theme-menu {
+    place-self: center end;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .main__section:first-child,
+  .main__section:nth-child(3) {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .main__section:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+  
+  .main__section:nth-child(2) .main__section-title {
+    grid-column: span 1;
+    width: calc(100% / 3);
+    
+  }
 }
