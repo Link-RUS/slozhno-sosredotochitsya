@@ -15,11 +15,12 @@
   --accent-color: #ff8dcb;
   --main-text-color: #353430;
   --decoration-color: transparent;
-  --title-decor-text-color: #353430;
+  --title-decor-color: #353430;
   --section-title-text-color: var(--main-text-color);
   --button-color: var(--main-text-color);
   --button-color-activ: #32312d66;
   --button-color-focus: var(--main-text-color);
+  --angle-color: var(--title-decor-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,10 +32,11 @@
     --accent-color: #ff8dcb;
     --main-text-color: #353430;
     --decoration-color: transparent;
-    --title-decor-text-color: #353430;
+    --title-decor-color: #353430;
     --section-title-text-color: var(--main-text-color);
     --button-color: var(--main-text-color);
     --button-color-activ: #32312d66;
     --button-color-focus: var(--main-text-color);
+    --angle-color: var(--title-decor-color);
   }
 }
