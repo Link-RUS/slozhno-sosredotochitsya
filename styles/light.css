@@ -11,8 +11,15 @@
   */
   --main-bg-image: url(../images/cover-image-light.png);
   --main-bg-color: #fff1f7;
+  --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
+  --main-text-color: #353430;
   --decoration-color: transparent;
+  --title-decor-text-color: #353430;
+  --section-title-text-color: var(--main-text-color);
+  --button-color: var(--main-text-color);
+  --button-color-activ: #32312d66;
+  --button-color-focus: var(--main-text-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,7 +27,14 @@
     /* Дублируем переменные светлой темы */
     --main-bg-image: url(../images/cover-image-light.png);
     --main-bg-color: #fff1f7;
+    --title-color: #ffc2e6;
     --accent-color: #ff8dcb;
+    --main-text-color: #353430;
     --decoration-color: transparent;
+    --title-decor-text-color: #353430;
+    --section-title-text-color: var(--main-text-color);
+    --button-color: var(--main-text-color);
+    --button-color-activ: #32312d66;
+    --button-color-focus: var(--main-text-color);
   }
 }
