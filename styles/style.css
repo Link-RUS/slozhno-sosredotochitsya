@@ -168,6 +168,12 @@
 .main__section:first-child,
 .main__section:nth-child(3) {
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+}
+
+.main__section:first-child .main__section-title,
+.main__section:nth-child(3) .main__section-title {
+  grid-row: span 2;
 }
 
 .main__section:nth-child(2) {
@@ -190,7 +196,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "title title title"
     "sunset sunset ice"
