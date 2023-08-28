@@ -259,21 +259,7 @@
   line-height: 82.5%; /* 129.525px */
 }
 
-@media (width > 1440px) {
-  .header {
-    height: calc(1440px / 4 * 3);
-  }
-
-  .footer {
-    height: calc(1440px / 4 * 3);
-  }
-}
-
 @media (width <= 768px) {
-  .header {
-    height: calc(100vw / 3 * 4);
-  }
-
   .header__theme-menu {
     place-self: center end;
   }
@@ -296,14 +282,26 @@
   .footer__text {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
-  .footer {
-    height: calc(100vw / 3 * 4);
-  }
 }
 
 @media (width <= 720px) {
   .header {
     padding: 10px;
+  }
+
+  .rec {
+    right: 30px;
+    top: 12px;
+  }
+
+  .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .decorated-zone::before {
+    right: 10px;
+    top: 10px;
   }
 
   .title {
