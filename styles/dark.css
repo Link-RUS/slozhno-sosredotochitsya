@@ -21,4 +21,15 @@
   --button-color-activ: #ff007066;
   --button-color-focus: var(--accent-color);
   --angle-color: var(--accent-color);
+  --title-shadow-color: #ff0070;
+}
+
+.page.theme_dark .rec {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rec {
+    display: block;
+  }
 }

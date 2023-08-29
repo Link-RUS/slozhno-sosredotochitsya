@@ -23,7 +23,7 @@
   --title-shadow-color: #ff0070;
 }
 
-.page.theme_auto .rec {
+.page.theme_light .rec {
   display: none;
 }
 
@@ -44,7 +44,7 @@
     --title-shadow-color: #ff0070;
   }
 
-  .page.theme_light .rec {
+  .rec {
     display: none;
   }
 }

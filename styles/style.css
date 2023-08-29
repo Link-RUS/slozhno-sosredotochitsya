@@ -166,14 +166,16 @@
   gap: 20px;
 }
 
-.main__section:first-child,
-.main__section:nth-child(3) {
+.main__section:first-child {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
 }
 
-.main__section:first-child .main__section-title,
-.main__section:nth-child(3) .main__section-title {
+.main__section:nth-child(3) {
+  grid-template-columns: 1fr 2fr;
+}
+
+.main__section:first-child .main__section-title {
   grid-row: span 2;
 }
 
@@ -311,6 +313,7 @@
   .main {
     padding-block: 40px;
     padding-inline: 10px;
+    gap: 50px;
   }
 
   .main__section:nth-child(2) {
